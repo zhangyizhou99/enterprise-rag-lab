@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Local ingestion outputs and upstream working copies.
+data/state/
+data/sources/
+
+# Keep the RFC 9112 regression fixture, but exclude the larger PDF corpus.
+data/raw/pdf/*.pdf
+!data/raw/pdf/rfc-9112.pdf
+
+# Legacy local documents may not have redistribution rights. Tests create a
+# temporary .doc placeholder because routing depends only on the extension.
+data/raw/docx/

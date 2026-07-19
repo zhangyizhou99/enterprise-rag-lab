@@ -1,0 +1,2344 @@
+{
+  "evaluation_set_id": "fastapi_retrieval_v1",
+  "evaluation_set_hash": "1590889014839d3eba2acd8b816627b5e928260909d885f932664397dcfbc3bd",
+  "corpus_snapshot": "vector_f8c4ccfbd78b2742ec7956a7",
+  "retriever": "bm25_fts5_trigram_or_v0.2.0",
+  "limit": 5,
+  "query_count": 30,
+  "approved_query_count": 30,
+  "is_provisional": false,
+  "hit_rate_at_k": 0.8,
+  "recall_at_k": 0.711111111111111,
+  "mrr": 0.6611111111111111,
+  "mean_latency_ms": 50.015446666899756,
+  "p95_latency_ms": 74.71780000196304,
+  "queries": [
+    {
+      "query_id": "q001",
+      "query": "如何在 FastAPI 中配置允许跨域访问的源、方法和请求头？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_0291cf68753b757c380c1d39",
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "score": 27.198443009876684,
+          "title": "CORS（跨域资源共享）",
+          "heading_path": [
+            "CORS（跨域资源共享）",
+            "使用 `CORSMiddleware`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cors.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_3692612b06158df5f7348d1c",
+          "document_id": "doc_b11d00fe8d98d1d970648445",
+          "score": 10.512517719255777,
+          "title": "FastAPI CLI",
+          "heading_path": [
+            "FastAPI CLI",
+            "在 `pyproject.toml` 中配置应用的 `entrypoint`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/fastapi-cli.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_062be0720a04f683ed9ee4ac",
+          "document_id": "doc_294e6d7fea655f3206dea421",
+          "score": 10.390341970120977,
+          "title": "第一步",
+          "heading_path": [
+            "第一步",
+            "查看",
+            "在 `pyproject.toml` 中配置应用 `entrypoint`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/first-steps.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_90024b616c54132a95615954",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 10.196005630477721,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "代理转发的请求头",
+            "代理转发请求头如何工作"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_231356edb324951894293dd3",
+          "document_id": "doc_5deb8353853ab453c6d02545",
+          "score": 9.887619258009531,
+          "title": "请求体 - 多个参数",
+          "heading_path": [
+            "请求体 - 多个参数",
+            "混合使用 `Path`、`Query` 和请求体参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/body-multiple-params.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_47bac0dc3f2b85de07b15a84"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 53.36649999662768
+    },
+    {
+      "query_id": "q002",
+      "query": "添加多个 FastAPI 中间件时，请求和响应的执行顺序是什么？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_14eea279a252f8231c9a0698",
+          "document_id": "doc_8bfb4c03599bfaa8043ca0cb",
+          "score": 60.939262069669724,
+          "title": "中间件",
+          "heading_path": [
+            "中间件",
+            "多个中间件的执行顺序"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/middleware.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_27bb87de0731bdbe8f5bfadd",
+          "document_id": "doc_77b0b731374dcca019812e75",
+          "score": 31.197236834216994,
+          "title": "额外数据类型",
+          "heading_path": [
+            "额外数据类型",
+            "其他数据类型"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/extra-data-types.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_e7b7b2d1778ad07f46bc8657",
+          "document_id": "doc_9ad88f4895124d425e5dbd78",
+          "score": 28.85071757794787,
+          "title": "使用 yield 的依赖项",
+          "heading_path": [
+            "使用 yield 的依赖项",
+            "使用 `yield` 的依赖项的执行"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-with-yield.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_d1432c89210247147a408eb8",
+          "document_id": "doc_77b0b731374dcca019812e75",
+          "score": 26.33148281891515,
+          "title": "额外数据类型",
+          "heading_path": [
+            "额外数据类型",
+            "其他数据类型"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/extra-data-types.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_f14f4ac727ed4762a135f2ab",
+          "document_id": "doc_5deb8353853ab453c6d02545",
+          "score": 16.659881770884088,
+          "title": "请求体 - 多个参数",
+          "heading_path": [
+            "请求体 - 多个参数",
+            "总结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/body-multiple-params.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_14eea279a252f8231c9a0698"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 52.15699999826029
+    },
+    {
+      "query_id": "q003",
+      "query": "如何用 Pydantic Settings 从环境变量读取并校验 FastAPI 配置？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_f14610e76132cbfa6b0b9d90",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 70.4142361664326,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "Pydantic 的 `Settings`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_80499be2063e226c80b26da6",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 70.15068501954008,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "Pydantic 的 `Settings`",
+            "安装 `pydantic-settings`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_2841aa2e6b1501c754910f74",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 69.42895511636073,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "Pydantic 的 `Settings`",
+            "使用 `settings`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_85e625311f3f8a922a1ceaa5",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 67.16583712730429,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "Pydantic 的 `Settings`",
+            "创建 `Settings` 对象"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_c3a7c8546770c137c0bb127f",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 57.62035269694566,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "读取 `.env` 文件",
+            "从 `.env` 中读取设置"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_85e625311f3f8a922a1ceaa5"
+      ],
+      "first_relevant_rank": 4,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 64.66940000245813
+    },
+    {
+      "query_id": "q004",
+      "query": "部署 FastAPI 时，通常由什么组件处理 HTTPS 证书并把请求转给应用？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_75a5b7f66d5d7be7c2126464",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 13.391854433059642,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "代理转发的请求头"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_ebb7ea0a774ff054f2721600",
+          "document_id": "doc_a044ce3fada121eb3e525355",
+          "score": 11.74097448379906,
+          "title": "部署概念",
+          "heading_path": [
+            "部署概念",
+            "安全性 - HTTPS"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/concepts.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_b09841b0913a822b481e0a4f",
+          "document_id": "doc_b2383a401ab2bd719e950fb2",
+          "score": 11.53423564333183,
+          "title": "容器中的 FastAPI - Docker",
+          "heading_path": [
+            "容器中的 FastAPI - Docker",
+            "HTTPS"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/docker.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_a0bc13e93c57b76332ccf1bb",
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "score": 9.937536366144569,
+          "title": "生命周期事件",
+          "heading_path": [
+            "生命周期事件",
+            "替代事件（弃用）",
+            "`startup` 事件"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/events.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_5019f9cbfb21f78a820db39c",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 9.524963698330003,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "使用 Traefik 进行本地测试"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_76dac934743c34725fa73124"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 65.55630000366364
+    },
+    {
+      "query_id": "q005",
+      "query": "FastAPI 位于可信代理后面时，怎样让 HTTPS 重定向生成正确的公网 URL？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_bcf64c336f2390111d047a20",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 36.9078596793453,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "代理转发的请求头",
+            "代理转发请求头如何工作"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_ff233b79a721f06a364191a7",
+          "document_id": "doc_b2383a401ab2bd719e950fb2",
+          "score": 24.024796912715097,
+          "title": "容器中的 FastAPI - Docker",
+          "heading_path": [
+            "容器中的 FastAPI - Docker",
+            "为 FastAPI 构建 Docker 镜像",
+            "Dockerfile",
+            "在 TLS 终止代理后面"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/docker.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_d64ee05fa282540853e319cb",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 17.61971135137597,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "代理转发的请求头",
+            "使用 HTTPS 的重定向"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b9930b300a534bb9c44c36b4",
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "score": 14.857335351055827,
+          "title": "使用代理",
+          "heading_path": [
+            "使用代理",
+            "附加的服务器"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/behind-a-proxy.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_3f5e8aaa962c3b558a0572ac",
+          "document_id": "doc_7516b7bd9c64f9831ad770d2",
+          "score": 14.786577049977259,
+          "title": "关于 HTTPS",
+          "heading_path": [
+            "关于 HTTPS",
+            "代理转发请求头"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/https.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_d64ee05fa282540853e319cb"
+      ],
+      "first_relevant_rank": 3,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.3333333333333333,
+      "latency_ms": 62.37390000023879
+    },
+    {
+      "query_id": "q006",
+      "query": "如何在路径操作装饰器中声明返回的 HTTP 状态码？",
+      "category": "configuration",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_5a4caf42d9142af02b0fdb05",
+          "document_id": "doc_d78c805ecd63606fd0f381b2",
+          "score": 29.46844139854108,
+          "title": "路径操作装饰器依赖项",
+          "heading_path": [
+            "路径操作装饰器依赖项",
+            "依赖项错误和返回值"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_b7a4f70b180acf100dee5d6d",
+          "document_id": "doc_d78c805ecd63606fd0f381b2",
+          "score": 29.298347923126553,
+          "title": "路径操作装饰器依赖项",
+          "heading_path": [
+            "路径操作装饰器依赖项",
+            "全局依赖项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_c5e3747b4366b5d2e1d05428",
+          "document_id": "doc_d78c805ecd63606fd0f381b2",
+          "score": 29.087575577214256,
+          "title": "路径操作装饰器依赖项",
+          "heading_path": [
+            "路径操作装饰器依赖项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_574536efceaf46e1c963abdb",
+          "document_id": "doc_d78c805ecd63606fd0f381b2",
+          "score": 28.852652413543144,
+          "title": "路径操作装饰器依赖项",
+          "heading_path": [
+            "路径操作装饰器依赖项",
+            "依赖项错误和返回值",
+            "触发异常"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_82f1dc179b40e834be9dbcfd",
+          "document_id": "doc_d78c805ecd63606fd0f381b2",
+          "score": 28.806935671909812,
+          "title": "路径操作装饰器依赖项",
+          "heading_path": [
+            "路径操作装饰器依赖项",
+            "依赖项错误和返回值",
+            "依赖项的需求项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/dependencies-in-path-operation-decorators.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_b683294e6bf491129944b308"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 45.780300002661534
+    },
+    {
+      "query_id": "q007",
+      "query": "FastAPI 的依赖注入是什么，适合解决哪些问题？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_0da395023490c5f1d0c6f083",
+          "document_id": "doc_f3f189f195aea2569f2fe4e7",
+          "score": 19.692981534166904,
+          "title": "依赖项",
+          "heading_path": [
+            "依赖项",
+            "什么是「依赖注入」"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/index.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_596faae41e05b70b1b325611",
+          "document_id": "doc_c34f897fabff12d076ab3e8e",
+          "score": 18.95529916294997,
+          "title": "特性",
+          "heading_path": [
+            "特性",
+            "FastAPI 特性",
+            "依赖注入"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/features.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_69010c642e7e9c6ec456a669",
+          "document_id": "doc_651b4ed7997a9df5ebb1b4b3",
+          "score": 17.367003182445366,
+          "title": "子依赖项",
+          "heading_path": [
+            "子依赖项",
+            "小结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/sub-dependencies.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_21e32def81bfbaa31bc4c410",
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "score": 15.26160010537506,
+          "title": "后台任务",
+          "heading_path": [
+            "后台任务",
+            "依赖注入"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/background-tasks.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_dcab241bd5492ee97ecabc42",
+          "document_id": "doc_4b1d16242797de5ab7f92a27",
+          "score": 15.1612620825213,
+          "title": "替代方案、灵感与对比",
+          "heading_path": [
+            "替代方案、灵感与对比",
+            "先前的工具",
+            "[NestJS](https://nestjs.com/)（以及 [Angular](https://angular.io/)）"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/alternatives.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_0da395023490c5f1d0c6f083"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 57.834299994283356
+    },
+    {
+      "query_id": "q008",
+      "query": "路径参数声明为 int 后，FastAPI 会怎样处理 URL 中的字符串数值？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_cea22f85bb0813f8711abcf5",
+          "document_id": "doc_485435145ee85cc004a82640",
+          "score": 29.460302573342304,
+          "title": "路径参数和数值校验",
+          "heading_path": [
+            "路径参数和数值校验"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/path-params-numeric-validations.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_bab86bd070b7883bfec02fa3",
+          "document_id": "doc_cabafbeaac6a31aa0ac05589",
+          "score": 29.415043816290638,
+          "title": "路径参数",
+          "heading_path": [
+            "路径参数",
+            "数据<dfn title=\"也称为：序列化、解析、编组\">转换</dfn>"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/path-params.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_cda1cbd6119da96cf2caa77a",
+          "document_id": "doc_cabafbeaac6a31aa0ac05589",
+          "score": 29.172370793851535,
+          "title": "路径参数",
+          "heading_path": [
+            "路径参数",
+            "小结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/path-params.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b449de0b356337a4ef6d2bf1",
+          "document_id": "doc_485435145ee85cc004a82640",
+          "score": 25.456691277960616,
+          "title": "路径参数和数值校验",
+          "heading_path": [
+            "路径参数和数值校验",
+            "按需对参数排序"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/path-params-numeric-validations.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_315c495e0edae26a0eb62297",
+          "document_id": "doc_d3683d35775e24a41334dfdb",
+          "score": 22.915755498491308,
+          "title": "查询参数",
+          "heading_path": [
+            "查询参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/query-params.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_bab86bd070b7883bfec02fa3"
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.5,
+      "latency_ms": 58.758400002261624
+    },
+    {
+      "query_id": "q009",
+      "query": "为什么 FastAPI 使用 Pydantic 模型声明请求体？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_e4121d8c49fdca86d53b4299",
+          "document_id": "doc_ffd21609ca16b23a5285d8c3",
+          "score": 40.028852961549156,
+          "title": "声明请求示例数据",
+          "heading_path": [
+            "声明请求示例数据",
+            "Pydantic 模型中的额外 JSON Schema 数据"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/schema-extra-example.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_c5b8f5a427355572230e2dd3",
+          "document_id": "doc_901f7fde38d15475b7e6358d",
+          "score": 34.81906340948578,
+          "title": "使用数据类",
+          "heading_path": [
+            "使用数据类"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/dataclasses.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_059c16f7f73b41b31028fbe3",
+          "document_id": "doc_ffd21609ca16b23a5285d8c3",
+          "score": 34.768996970261945,
+          "title": "声明请求示例数据",
+          "heading_path": [
+            "声明请求示例数据",
+            "技术细节",
+            "Pydantic 与 FastAPI 的 `examples`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/schema-extra-example.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_613313b3bff2e2ddcd99d349",
+          "document_id": "doc_e5b88c8bf7d032bba761b048",
+          "score": 33.023081890878906,
+          "title": "获取当前用户",
+          "heading_path": [
+            "获取当前用户",
+            "创建用户模型"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/security/get-current-user.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_8ba0353d5cf0f2a4311510ba",
+          "document_id": "doc_ffd21609ca16b23a5285d8c3",
+          "score": 30.892684466327754,
+          "title": "声明请求示例数据",
+          "heading_path": [
+            "声明请求示例数据",
+            "`Field` 的附加参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/schema-extra-example.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_8214b7bd339b0fbb8983ace5",
+        "chunk_d46012002a235b5defc80c05"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 64.82350000442239
+    },
+    {
+      "query_id": "q010",
+      "query": "异步编程中的并发和并行有什么区别？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_efc875f481703b9d98d1af9f",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 30.734429711813455,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_7510da1c9971b08ec6169bb0",
+          "document_id": "doc_a044ce3fada121eb3e525355",
+          "score": 29.05283328828633,
+          "title": "部署概念",
+          "heading_path": [
+            "部署概念",
+            "程序和进程"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/concepts.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_0da395023490c5f1d0c6f083",
+          "document_id": "doc_f3f189f195aea2569f2fe4e7",
+          "score": 8.307813286008457,
+          "title": "依赖项",
+          "heading_path": [
+            "依赖项",
+            "什么是「依赖注入」"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/index.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_69010c642e7e9c6ec456a669",
+          "document_id": "doc_651b4ed7997a9df5ebb1b4b3",
+          "score": 7.086183117283572,
+          "title": "子依赖项",
+          "heading_path": [
+            "子依赖项",
+            "小结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/dependencies/sub-dependencies.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_2e87f4862e88e005c039a9e8",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 6.629329369863501,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await",
+            "异步代码",
+            "并发 + 并行: Web + 机器学习"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_aff912b2bc6ff8b32d82a071",
+        "chunk_e00bc8b3034da3de0bd3660e"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 4.520700000284705
+    },
+    {
+      "query_id": "q011",
+      "query": "OAuth2 作用域在 OpenAPI 中表示什么？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_340b4566dead6f8cf54a0ff3",
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "score": 41.26368999693333,
+          "title": "OAuth2 作用域",
+          "heading_path": [
+            "OAuth2 作用域",
+            "OAuth2 作用域与 OpenAPI"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/security/oauth2-scopes.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_81d0ebb4f11f82a85603bb9e",
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "score": 37.89846868211718,
+          "title": "OAuth2 作用域",
+          "heading_path": [
+            "OAuth2 作用域"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/security/oauth2-scopes.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_746d3d7edd91d1fe58983d54",
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "score": 34.514634294268845,
+          "title": "OAuth2 作用域",
+          "heading_path": [
+            "OAuth2 作用域",
+            "装饰器 `dependencies` 中的 `Security`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/security/oauth2-scopes.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_16e82d66c6a5daabac55cb23",
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "score": 33.37783552031605,
+          "title": "OAuth2 作用域",
+          "heading_path": [
+            "OAuth2 作用域",
+            "使用 `SecurityScopes`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/security/oauth2-scopes.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_f33e26f9d8cf5ee4f6d4e51d",
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "score": 33.035390506535265,
+          "title": "OAuth2 作用域",
+          "heading_path": [
+            "OAuth2 作用域",
+            "在*路径操作*与依赖项中声明作用域"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/security/oauth2-scopes.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_340b4566dead6f8cf54a0ff3"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 74.71780000196304
+    },
+    {
+      "query_id": "q012",
+      "query": "FastAPI lifespan 中 yield 前后的代码分别在什么时候运行？",
+      "category": "concept",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_d3759aca91a3675480353418",
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "score": 55.50406656263336,
+          "title": "生命周期事件",
+          "heading_path": [
+            "生命周期事件",
+            "Lifespan",
+            "生命周期函数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/events.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_b5b6c3d7b623bc3b8cf0f34e",
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "score": 53.804153356065385,
+          "title": "生命周期事件",
+          "heading_path": [
+            "生命周期事件",
+            "Lifespan"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/events.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_16450d7b99d29d2137869cb6",
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "score": 51.90477689949477,
+          "title": "生命周期事件",
+          "heading_path": [
+            "生命周期事件",
+            "Lifespan",
+            "异步上下文管理器"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/events.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_94e3847b2a3b17c6ac7732f7",
+          "document_id": "doc_ea93d9f4902f10cc933c5bb6",
+          "score": 44.958547413215705,
+          "title": "测试事件：lifespan 和 startup - shutdown",
+          "heading_path": [
+            "测试事件：lifespan 和 startup - shutdown"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/testing-events.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_aac4f9186074ba03305d77ce",
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "score": 41.705743841344386,
+          "title": "生命周期事件",
+          "heading_path": [
+            "生命周期事件",
+            "技术细节"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/events.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_b5b6c3d7b623bc3b8cf0f34e"
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.5,
+      "latency_ms": 71.91400000010617
+    },
+    {
+      "query_id": "q013",
+      "query": "接收上传文件时，怎样避免把整个文件一次性放进内存？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_79142cb835c6b82e9dfc6b98",
+          "document_id": "doc_dd056858ebb5465a1555d664",
+          "score": 30.029313719374425,
+          "title": "请求文件",
+          "heading_path": [
+            "请求文件"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-files.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_e79d701bb3f952587e8c5ef3",
+          "document_id": "doc_fd14dd0474d471ab9a82a331",
+          "score": 14.884475095550998,
+          "title": "请求表单与文件",
+          "heading_path": [
+            "请求表单与文件"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-forms-and-files.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_bc0f25c8f515032e445be91f",
+          "document_id": "doc_09637d55775414aab09ded16",
+          "score": 11.844330960454478,
+          "title": "更大的应用 - 多个文件",
+          "heading_path": [
+            "更大的应用 - 多个文件",
+            "在另一个 `APIRouter` 中包含一个 `APIRouter`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/bigger-applications.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_1c100f3b23c678ee64563b5e",
+          "document_id": "doc_dd056858ebb5465a1555d664",
+          "score": 10.783857869150625,
+          "title": "请求文件",
+          "heading_path": [
+            "请求文件",
+            "含 `UploadFile` 的文件参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-files.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_67a4f64f3938e7df7957fc16",
+          "document_id": "doc_fd14dd0474d471ab9a82a331",
+          "score": 8.502600786035757,
+          "title": "请求表单与文件",
+          "heading_path": [
+            "请求表单与文件",
+            "小结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-forms-and-files.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_1c100f3b23c678ee64563b5e",
+        "chunk_4cead67dfb5d44051c0d9746"
+      ],
+      "first_relevant_rank": 4,
+      "hit_at_k": 1.0,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 0.25,
+      "latency_ms": 9.007100001326762
+    },
+    {
+      "query_id": "q014",
+      "query": "如何在响应返回后执行发送邮件之类的小型后台任务？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_750f287d8cedf479d6a101dc",
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "score": 32.5767396832316,
+          "title": "后台任务",
+          "heading_path": [
+            "后台任务",
+            "告诫"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/background-tasks.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_160bb5c1c23038cf07b2e47b",
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "score": 23.14853072636359,
+          "title": "后台任务",
+          "heading_path": [
+            "后台任务"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/background-tasks.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_390af4a95b6fe26daef59194",
+          "document_id": "doc_34c37e791c4e25ed557fc749",
+          "score": 21.627165061518102,
+          "title": "高级依赖项",
+          "heading_path": [
+            "高级依赖项",
+            "带 `yield` 的依赖项、`HTTPException`、`except` 与后台任务",
+            "带 `yield` 的依赖项与 `scope`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/advanced-dependencies.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b4d8fe67514741d7ce46ddff",
+          "document_id": "doc_34c37e791c4e25ed557fc749",
+          "score": 21.15909178050498,
+          "title": "高级依赖项",
+          "heading_path": [
+            "高级依赖项",
+            "带 `yield` 的依赖项、`HTTPException`、`except` 与后台任务",
+            "带 `yield` 的依赖项与 `StreamingResponse`（技术细节）"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/advanced-dependencies.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_21e32def81bfbaa31bc4c410",
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "score": 20.97119806061712,
+          "title": "后台任务",
+          "heading_path": [
+            "后台任务",
+            "依赖注入"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/background-tasks.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_160bb5c1c23038cf07b2e47b",
+        "chunk_2c6a42ec0026a2bacdf7a622",
+        "chunk_d8d8f82e6341c7eec8ab78b8"
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_k": 1.0,
+      "recall_at_k": 0.3333333333333333,
+      "reciprocal_rank": 0.5,
+      "latency_ms": 9.33890000305837
+    },
+    {
+      "query_id": "q015",
+      "query": "如何使用 pytest 和 TestClient 测试 FastAPI 接口？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_c6750402a44b88084a812fc5",
+          "document_id": "doc_b83759371bdb806a5fd2c6e2",
+          "score": 55.96733370775001,
+          "title": "测试",
+          "heading_path": [
+            "测试",
+            "使用 `TestClient`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/testing.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_08c3ee78c32be6ed2c7de4ea",
+          "document_id": "doc_fc338ea7e622b93ba1f06fba",
+          "score": 49.12271412336419,
+          "title": "异步测试",
+          "heading_path": [
+            "异步测试",
+            "HTTPX"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/async-tests.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_7e44b704d6243f773c18c438",
+          "document_id": "doc_fc338ea7e622b93ba1f06fba",
+          "score": 44.75101079498379,
+          "title": "异步测试",
+          "heading_path": [
+            "异步测试",
+            "详细说明"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/async-tests.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_4c0390e1908fbcdc40669ce0",
+          "document_id": "doc_b83759371bdb806a5fd2c6e2",
+          "score": 43.770589864685086,
+          "title": "测试",
+          "heading_path": [
+            "测试"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/testing.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_9890bebd3624513e0e45909f",
+          "document_id": "doc_7788e9ca2a389c5722ce8292",
+          "score": 43.10288926315861,
+          "title": "测试 WebSockets",
+          "heading_path": [
+            "测试 WebSockets"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/testing-websockets.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_c6750402a44b88084a812fc5"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 72.36600000032922
+    },
+    {
+      "query_id": "q016",
+      "query": "大型 FastAPI 项目怎样用 APIRouter 拆分多个模块？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_93c521f1b70ce7758c1d9f8a",
+          "document_id": "doc_09637d55775414aab09ded16",
+          "score": 33.52069173594889,
+          "title": "更大的应用 - 多个文件",
+          "heading_path": [
+            "更大的应用 - 多个文件",
+            "`APIRouter`",
+            "导入 `APIRouter`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/bigger-applications.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_bc0f25c8f515032e445be91f",
+          "document_id": "doc_09637d55775414aab09ded16",
+          "score": 33.416725805548836,
+          "title": "更大的应用 - 多个文件",
+          "heading_path": [
+            "更大的应用 - 多个文件",
+            "在另一个 `APIRouter` 中包含一个 `APIRouter`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/bigger-applications.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_c736f48f7a68bab35b6a6a03",
+          "document_id": "doc_09637d55775414aab09ded16",
+          "score": 33.10302604087157,
+          "title": "更大的应用 - 多个文件",
+          "heading_path": [
+            "更大的应用 - 多个文件",
+            "`APIRouter`",
+            "使用 `APIRouter` 的*路径操作*"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/bigger-applications.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b312e0ea94ecedcd0daa0534",
+          "document_id": "doc_09637d55775414aab09ded16",
+          "score": 32.71267047325085,
+          "title": "更大的应用 - 多个文件",
+          "heading_path": [
+            "更大的应用 - 多个文件",
+            "`FastAPI` 主体",
+            "包含 `users` 和 `items` 的 `APIRouter`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/bigger-applications.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_d73d028099f4f896a87fa832",
+          "document_id": "doc_c95d4600a52084bcc9b6b8f4",
+          "score": 32.53970024072698,
+          "title": "自定义 Request 和 APIRoute 类",
+          "heading_path": [
+            "自定义 Request 和 APIRoute 类",
+            "在路由器中自定义 `APIRoute` 类"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/how-to/custom-request-and-route.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_c82d08c40f1aa47db01b83b6"
+      ],
+      "first_relevant_rank": null,
+      "hit_at_k": 0.0,
+      "recall_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "latency_ms": 71.40059999801451
+    },
+    {
+      "query_id": "q017",
+      "query": "如何为每个 FastAPI 请求提供独立的数据库 Session？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_f6fdff3344300520243d1ecf",
+          "document_id": "doc_58a5c14b4a0cbd9e9d544e9c",
+          "score": 48.09741387053676,
+          "title": "SQL（关系型）数据库",
+          "heading_path": [
+            "SQL（关系型）数据库",
+            "创建含有单一模型的应用",
+            "创建会话（Session）依赖项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/sql-databases.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_ebe98c4edd68534506ff30c4",
+          "document_id": "doc_58a5c14b4a0cbd9e9d544e9c",
+          "score": 31.826226386392634,
+          "title": "SQL（关系型）数据库",
+          "heading_path": [
+            "SQL（关系型）数据库",
+            "创建含有单一模型的应用",
+            "创建 Hero"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/sql-databases.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_e973b9ab9635bacc54c1a4fa",
+          "document_id": "doc_58a5c14b4a0cbd9e9d544e9c",
+          "score": 17.95376205385496,
+          "title": "SQL（关系型）数据库",
+          "heading_path": [
+            "SQL（关系型）数据库",
+            "创建含有单一模型的应用",
+            "创建引擎（Engine）"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/sql-databases.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_a73fea71bce1679d6775b93a",
+          "document_id": "doc_c34f897fabff12d076ab3e8e",
+          "score": 17.24192104842119,
+          "title": "特性",
+          "heading_path": [
+            "特性",
+            "FastAPI 特性",
+            "安全性及身份验证"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/features.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_385060e5619e1d74a9eb7a1d",
+          "document_id": "doc_34c37e791c4e25ed557fc749",
+          "score": 14.835932685492747,
+          "title": "高级依赖项",
+          "heading_path": [
+            "高级依赖项",
+            "带 `yield` 的依赖项、`HTTPException`、`except` 与后台任务",
+            "带 `yield` 的依赖项与 `StreamingResponse`（技术细节）",
+            "需要提前执行退出代码的用例"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/advanced-dependencies.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_f6fdff3344300520243d1ecf"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 79.0257000044221
+    },
+    {
+      "query_id": "q018",
+      "query": "怎样把一个静态文件目录挂载到 FastAPI 的指定路径？",
+      "category": "procedure",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_dae80be1ce920ce3943dcee0",
+          "document_id": "doc_5f54f2bbd3bc7b99709fee26",
+          "score": 30.270396349631454,
+          "title": "静态文件",
+          "heading_path": [
+            "静态文件",
+            "使用 `StaticFiles`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/static-files.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_1f12a82f96e31dd5918d85cc",
+          "document_id": "doc_5f54f2bbd3bc7b99709fee26",
+          "score": 23.875573422533037,
+          "title": "静态文件",
+          "heading_path": [
+            "静态文件",
+            "使用 `StaticFiles`",
+            "什么是“挂载”（Mounting）"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/static-files.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_a118ce8bc175fe8441ad4b7f",
+          "document_id": "doc_f0bacbfa758ed96b38d8f0d9",
+          "score": 22.814123252364894,
+          "title": "自托管自定义文档 UI 静态资源",
+          "heading_path": [
+            "自托管自定义文档 UI 静态资源",
+            "为文档自托管 JavaScript 和 CSS",
+            "提供静态文件"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/how-to/custom-docs-ui-assets.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_f7e90b7d168ecd4bada0adeb",
+          "document_id": "doc_5f54f2bbd3bc7b99709fee26",
+          "score": 17.504989090674997,
+          "title": "静态文件",
+          "heading_path": [
+            "静态文件",
+            "更多信息"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/static-files.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_b0b8bb4f1654fcf44b525f27",
+          "document_id": "doc_5f54f2bbd3bc7b99709fee26",
+          "score": 17.503598804299912,
+          "title": "静态文件",
+          "heading_path": [
+            "静态文件",
+            "细节"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/static-files.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_dae80be1ce920ce3943dcee0"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 54.981599998427555
+    },
+    {
+      "query_id": "q019",
+      "query": "路径操作中找不到资源时，怎样返回带 detail 的 HTTP 错误？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_2e8af3758cd345c49fcfe098",
+          "document_id": "doc_e0516fd9d9a66517a3c38999",
+          "score": 18.7182445085218,
+          "title": "处理错误",
+          "heading_path": [
+            "处理错误",
+            "使用 `HTTPException`",
+            "响应结果"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/handling-errors.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_800efd5830a604969f1f7817",
+          "document_id": "doc_666e554d2bafa9d3befaf2c6",
+          "score": 17.362529625985626,
+          "title": "OpenAPI 中的附加响应",
+          "heading_path": [
+            "OpenAPI 中的附加响应",
+            "带有 `model` 的附加响应"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/additional-responses.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_cff1911b768c9716c6d9c748",
+          "document_id": "doc_4f0544f65a81617304d30a1a",
+          "score": 17.05326526843775,
+          "title": "translation-banner",
+          "heading_path": [],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/translation-banner.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b3b1c8a8147b0b05e6134eae",
+          "document_id": "doc_bc1d6c01152aa4cf0fa99348",
+          "score": 15.541141986786352,
+          "title": "OAuth2 实现简单的 Password 和 Bearer 验证",
+          "heading_path": [
+            "OAuth2 实现简单的 Password 和 Bearer 验证",
+            "实际效果",
+            "未激活用户"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/security/simple-oauth2.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_6c3484375f19c0f53dfe2844",
+          "document_id": "doc_80f1f65cbf8513798e357fe3",
+          "score": 15.466018016815244,
+          "title": "FastAPI",
+          "heading_path": [
+            "FastAPI",
+            "示例",
+            "运行"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/index.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_2e8af3758cd345c49fcfe098",
+        "chunk_489426958bb381537a8138cf"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 48.308400000678375
+    },
+    {
+      "query_id": "q020",
+      "query": "为什么调试时要把 uvicorn.run 放在 __name__ == __main__ 判断里？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_2dc2e677c9c1de21b1b80a8a",
+          "document_id": "doc_d194837ee9ae1f212ebfbb36",
+          "score": 120.09333050570494,
+          "title": "调试",
+          "heading_path": [
+            "调试",
+            "调用 `uvicorn`",
+            "关于 `__name__ == \"__main__\"`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/debugging.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_4169deb9ff7e33461f2bfc1d",
+          "document_id": "doc_d194837ee9ae1f212ebfbb36",
+          "score": 113.67201508015029,
+          "title": "调试",
+          "heading_path": [
+            "调试",
+            "调用 `uvicorn`",
+            "关于 `__name__ == \"__main__\"`",
+            "更多细节"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/debugging.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_d3c97d750eb999067500162c",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 40.94911247479478,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "Pydantic 的 `Settings`",
+            "运行服务器"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_81e6e73ce28f0c8fa5db81c0",
+          "document_id": "doc_f123762d5089ea55e5fc4666",
+          "score": 30.28743614919138,
+          "title": "手动运行服务器",
+          "heading_path": [
+            "手动运行服务器",
+            "运行服务器程序"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/manually.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_f8dbf8182151ce9ebcbab34a",
+          "document_id": "doc_a2b59088fc568959e9219128",
+          "score": 28.92692075194243,
+          "title": "服务器工作进程（Workers） - 使用 Uvicorn 的多工作进程模式",
+          "heading_path": [
+            "服务器工作进程（Workers） - 使用 Uvicorn 的多工作进程模式",
+            "多个工作进程"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/deployment/server-workers.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4169deb9ff7e33461f2bfc1d"
+      ],
+      "first_relevant_rank": 2,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 0.5,
+      "latency_ms": 30.832299999019597
+    },
+    {
+      "query_id": "q021",
+      "query": "JSON 请求缺少 Content-Type 时为什么不会按 JSON 解析？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_72c5393a45809269ea513c53",
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "score": 38.51716195200918,
+          "title": "严格的 Content-Type 检查",
+          "heading_path": [
+            "严格的 Content-Type 检查"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/strict-content-type.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_d73754e436bade42131be528",
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "score": 35.38905310789415,
+          "title": "严格的 Content-Type 检查",
+          "heading_path": [
+            "严格的 Content-Type 检查",
+            "允许无 Content-Type 的请求"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/strict-content-type.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_0e11e200185b4397050252e5",
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "score": 31.465906097130585,
+          "title": "严格的 Content-Type 检查",
+          "heading_path": [
+            "严格的 Content-Type 检查",
+            "攻击示例"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/strict-content-type.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_6dd32949e5348664acacf6c0",
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "score": 30.397344925011744,
+          "title": "严格的 Content-Type 检查",
+          "heading_path": [
+            "严格的 Content-Type 检查",
+            "开放的互联网"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/strict-content-type.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_64858d14a66d88e27be2707c",
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "score": 30.165120636518814,
+          "title": "严格的 Content-Type 检查",
+          "heading_path": [
+            "严格的 Content-Type 检查",
+            "CSRF 风险"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/strict-content-type.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_72c5393a45809269ea513c53"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 41.77940000226954
+    },
+    {
+      "query_id": "q022",
+      "query": "FastAPI 安全工具认证失败为什么现在返回 401 而不是旧版 403？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_3c779dd3f98e788dae94158c",
+          "document_id": "doc_937783b9078cbb64f23bbcfa",
+          "score": 40.82400567174494,
+          "title": "使用旧的 403 认证错误状态码",
+          "heading_path": [
+            "使用旧的 403 认证错误状态码"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/how-to/authentication-error-status-code.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_3d118ccdc304dc5beaadbcd7",
+          "document_id": "doc_541ccd10dc3416c4a97110af",
+          "score": 12.858442998845298,
+          "title": "安全 - 第一步",
+          "heading_path": [
+            "安全 - 第一步"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/security/first-steps.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_384fcacfa4b2dc8cf0200332",
+          "document_id": "doc_27831d4bc16706b8ca2d5417",
+          "score": 12.33753771401392,
+          "title": "虚拟环境",
+          "heading_path": [
+            "虚拟环境",
+            "为什么要使用虚拟环境",
+            "存在的问题"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/virtual-environments.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_c408a777418e61f978ee270c",
+          "document_id": "doc_34c37e791c4e25ed557fc749",
+          "score": 12.079368180150245,
+          "title": "高级依赖项",
+          "heading_path": [
+            "高级依赖项",
+            "把实例作为依赖项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/advanced-dependencies.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_7926648d1bb6fa6ea0270b6a",
+          "document_id": "doc_541ccd10dc3416c4a97110af",
+          "score": 9.577915453348647,
+          "title": "安全 - 第一步",
+          "heading_path": [
+            "安全 - 第一步",
+            "**FastAPI** 的 `OAuth2PasswordBearer`",
+            "使用"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/security/first-steps.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_3c779dd3f98e788dae94158c"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 56.2865999963833
+    },
+    {
+      "query_id": "q023",
+      "query": "测试时怎样临时替换 FastAPI 依赖并在结束后恢复？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_847b57ff3dceeb1bc9654260",
+          "document_id": "doc_3b8b29f79e7494dff9b99a02",
+          "score": 20.293448902921572,
+          "title": "使用覆盖测试依赖项",
+          "heading_path": [
+            "使用覆盖测试依赖项",
+            "测试时覆盖依赖项",
+            "使用 `app.dependency_overrides` 属性"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/testing-dependencies.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_2dd71ec61a94847224d20cc5",
+          "document_id": "doc_3b8b29f79e7494dff9b99a02",
+          "score": 9.889519819391055,
+          "title": "使用覆盖测试依赖项",
+          "heading_path": [
+            "使用覆盖测试依赖项",
+            "测试时覆盖依赖项"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/testing-dependencies.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_27f2ef0a86deda9ad03810c2",
+          "document_id": "doc_3b8b29f79e7494dff9b99a02",
+          "score": 8.84364079314282,
+          "title": "使用覆盖测试依赖项",
+          "heading_path": [
+            "使用覆盖测试依赖项",
+            "测试时覆盖依赖项",
+            "用例：外部服务"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/testing-dependencies.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_0b51cbfec504fe7fd48dfc2d",
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "score": 6.531336567417913,
+          "title": "设置和环境变量",
+          "heading_path": [
+            "设置和环境变量",
+            "小结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/settings.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_390af4a95b6fe26daef59194",
+          "document_id": "doc_34c37e791c4e25ed557fc749",
+          "score": 6.417976734982571,
+          "title": "高级依赖项",
+          "heading_path": [
+            "高级依赖项",
+            "带 `yield` 的依赖项、`HTTPException`、`except` 与后台任务",
+            "带 `yield` 的依赖项与 `scope`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/advanced-dependencies.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_847b57ff3dceeb1bc9654260"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 56.466800000634976
+    },
+    {
+      "query_id": "q024",
+      "query": "CORS 开启凭证后为什么不能把 origins、methods 和 headers 都设为通配符？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_0291cf68753b757c380c1d39",
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "score": 58.238825992662385,
+          "title": "CORS（跨域资源共享）",
+          "heading_path": [
+            "CORS（跨域资源共享）",
+            "使用 `CORSMiddleware`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cors.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_3032b2c0f5e67ee0b18144a8",
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "score": 54.76191523633494,
+          "title": "CORS（跨域资源共享）",
+          "heading_path": [
+            "CORS（跨域资源共享）",
+            "使用 `CORSMiddleware`",
+            "CORS 预检请求"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cors.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_3cc8a850bba3be68991d32de",
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "score": 42.754513833824596,
+          "title": "CORS（跨域资源共享）",
+          "heading_path": [
+            "CORS（跨域资源共享）",
+            "使用 `CORSMiddleware`",
+            "简单请求"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cors.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_f26ddad1b2146121337d12de",
+          "document_id": "doc_0e71bf35ff125d083be4b599",
+          "score": 40.50130227610014,
+          "title": "RFC 9112: HTTP/1.1",
+          "heading_path": [],
+          "source_uri": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_e56817b08f946c5166ee7f20",
+          "document_id": "doc_6e5efdbd24ca23da7715b812",
+          "score": 35.837374428713694,
+          "title": "CORS Incident Postmortem",
+          "heading_path": [
+            "1. Summary"
+          ],
+          "source_uri": null
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_0291cf68753b757c380c1d39",
+        "chunk_8d829c7320e1dc36e25a2625"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 63.9662000030512
+    },
+    {
+      "query_id": "q025",
+      "query": "返回字典或数据库对象时，response_model 与函数返回类型应该怎样选择？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_6f448335e70200b32dd4a558",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 98.85736295141955,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "`response_model` 参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_a15350da164e1ef304e756dd",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 74.77006671209176,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "添加输出模型",
+            "`response_model` 还是返回类型"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_bd1bcf2f1b82f7496c9a143a",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 63.81996295748818,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "`response_model` 参数",
+            "`response_model` 的优先级"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_3c605e5ef5113e32b7f93c6c",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 63.09542306253779,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "`response_model` 参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_980de7315aa467ba9f3c674c",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 62.80488370658679,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "响应模型的编码参数",
+            "`response_model_include` 和 `response_model_exclude`",
+            "使用 `list` 而不是 `set`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_6f448335e70200b32dd4a558"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 44.096099998569116
+    },
+    {
+      "query_id": "q026",
+      "query": "为什么同一个路径操作不能同时接收 Form 字段和 JSON Body 字段？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_9beeec73001bd7c1b0d5a64f",
+          "document_id": "doc_fd14dd0474d471ab9a82a331",
+          "score": 36.1469027989062,
+          "title": "请求表单与文件",
+          "heading_path": [
+            "请求表单与文件",
+            "定义 `File` 与 `Form` 参数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-forms-and-files.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_2f068becc3f463bd401382f5",
+          "document_id": "doc_0e7fa92cd4cc5d1e1256d42d",
+          "score": 30.30316580464921,
+          "title": "表单数据",
+          "heading_path": [
+            "表单数据",
+            "关于 \"表单字段\""
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-forms.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_2d968c3cdc2734d71758e9a7",
+          "document_id": "doc_dd056858ebb5465a1555d664",
+          "score": 29.757371957684864,
+          "title": "请求文件",
+          "heading_path": [
+            "请求文件",
+            "什么是「表单数据」"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/request-files.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_d875cf9bd40d0d44765c06ad",
+          "document_id": "doc_f0bacbfa758ed96b38d8f0d9",
+          "score": 23.61842880189916,
+          "title": "自托管自定义文档 UI 静态资源",
+          "heading_path": [
+            "自托管自定义文档 UI 静态资源",
+            "为文档自托管 JavaScript 和 CSS",
+            "创建一个路径操作测试静态文件"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/how-to/custom-docs-ui-assets.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_3f1b4cef2705d4b5b31438fe",
+          "document_id": "doc_f0bacbfa758ed96b38d8f0d9",
+          "score": 23.49475775758118,
+          "title": "自托管自定义文档 UI 静态资源",
+          "heading_path": [
+            "自托管自定义文档 UI 静态资源",
+            "为 JavaScript 和 CSS 自定义 CDN",
+            "创建一个路径操作进行测试"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/how-to/custom-docs-ui-assets.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_2f068becc3f463bd401382f5",
+        "chunk_9beeec73001bd7c1b0d5a64f"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 39.818299999751616
+    },
+    {
+      "query_id": "q027",
+      "query": "在 FastAPI 中兼容 Flask 或 Django 这类 WSGI 应用时需要什么包装层？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_702ee4fcb7f1d016a81152f6",
+          "document_id": "doc_9ded5f89cfb34b9f01100adb",
+          "score": 69.72511715610447,
+          "title": "包含 WSGI - Flask，Django，其它",
+          "heading_path": [
+            "包含 WSGI - Flask，Django，其它"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/wsgi.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_ed4241b4532fc24c45b8b2c9",
+          "document_id": "doc_9ded5f89cfb34b9f01100adb",
+          "score": 67.27721305899382,
+          "title": "包含 WSGI - Flask，Django，其它",
+          "heading_path": [
+            "包含 WSGI - Flask，Django，其它",
+            "检查"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/wsgi.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_c35facbf4c14d136891ea896",
+          "document_id": "doc_9ded5f89cfb34b9f01100adb",
+          "score": 66.96780674525318,
+          "title": "包含 WSGI - Flask，Django，其它",
+          "heading_path": [
+            "包含 WSGI - Flask，Django，其它",
+            "使用 `WSGIMiddleware`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/wsgi.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_4ac0a2be9540df3d7c5b0891",
+          "document_id": "doc_4b1d16242797de5ab7f92a27",
+          "score": 42.59460918938049,
+          "title": "替代方案、灵感与对比",
+          "heading_path": [
+            "替代方案、灵感与对比",
+            "先前的工具",
+            "[Flask](https://flask.palletsprojects.com)"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/alternatives.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_f22f6d9a02f1dab2d5591759",
+          "document_id": "doc_7198954fdabb3a41b1c88a4e",
+          "score": 33.222966386684995,
+          "title": "使用密码（及哈希）的 OAuth2，基于 JWT 的 Bearer 令牌",
+          "heading_path": [
+            "使用密码（及哈希）的 OAuth2，基于 JWT 的 Bearer 令牌",
+            "安装 `pwdlib`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/security/oauth2-jwt.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_702ee4fcb7f1d016a81152f6",
+        "chunk_c35facbf4c14d136891ea896"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 60.66179999470478
+    },
+    {
+      "query_id": "q028",
+      "query": "调用需要 await 的第三方库时，路径操作应该使用 async def 还是普通 def？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_4faee3b8321d58672ad92cea",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 59.97172699271645,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await",
+            "赶时间吗？"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_726b6c804fca3b6046e0a39e",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 58.275233302601485,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await",
+            "非常技术性的细节",
+            "其他工具函数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_efc875f481703b9d98d1af9f",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 48.901428950308,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_b465fbe2d0dd3960254b4711",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 47.851356031353255,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await",
+            "非常技术性的细节",
+            "路径操作函数"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_c1f325d2bde5307d32903af5",
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "score": 47.60810800786357,
+          "title": "并发 async / await",
+          "heading_path": [
+            "并发 async / await",
+            "`async` 和 `await`",
+            "更多技术细节"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/async.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4faee3b8321d58672ad92cea"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 24.781499996606726
+    },
+    {
+      "query_id": "q029",
+      "query": "使用 Pydantic Cookie 参数模型比逐个声明 Cookie 字段多做了什么？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_9d5bb65c1f9457db83fd3527",
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "score": 66.06161546540957,
+          "title": "Cookie 参数模型",
+          "heading_path": [
+            "Cookie 参数模型",
+            "带有 Pydantic 模型的 Cookie"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cookie-param-models.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_5fbf3cc16bfa4622f9e330a3",
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "score": 61.30186578863365,
+          "title": "Cookie 参数模型",
+          "heading_path": [
+            "Cookie 参数模型",
+            "总结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cookie-param-models.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_3f6d3958d6bef86a07ff393f",
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "score": 57.798171653964076,
+          "title": "Cookie 参数模型",
+          "heading_path": [
+            "Cookie 参数模型"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cookie-param-models.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_e0821289ef82dd71abbc1c18",
+          "document_id": "doc_7c19335f51ed6a9ab9d938c6",
+          "score": 54.31141530932794,
+          "title": "查询参数模型",
+          "heading_path": [
+            "查询参数模型",
+            "总结"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/query-param-models.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_d8a9570984a010c66979a368",
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "score": 50.22457282661912,
+          "title": "Cookie 参数模型",
+          "heading_path": [
+            "Cookie 参数模型",
+            "禁止额外的 Cookie"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/cookie-param-models.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_3f6d3958d6bef86a07ff393f",
+        "chunk_9d5bb65c1f9457db83fd3527",
+        "chunk_d8a9570984a010c66979a368"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 22.204799999599345
+    },
+    {
+      "query_id": "q030",
+      "query": "额外响应的 responses 参数与主响应的 response_model 有什么不同？",
+      "category": "comparison",
+      "review_status": "approved",
+      "candidates": [
+        {
+          "rank": 1,
+          "chunk_id": "chunk_a364f0135665a5d48dfb9144",
+          "document_id": "doc_e0ab7b2e23d96d3e541df665",
+          "score": 52.53626586390154,
+          "title": "路径操作的高级配置",
+          "heading_path": [
+            "路径操作的高级配置",
+            "附加响应"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/path-operation-advanced-configuration.md"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "chunk_b854f2c8af42fbd76dad7bce",
+          "document_id": "doc_901f7fde38d15475b7e6358d",
+          "score": 51.035085542952764,
+          "title": "使用数据类",
+          "heading_path": [
+            "使用数据类",
+            "在 `response_model` 中使用数据类"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/advanced/dataclasses.md"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "chunk_bd1bcf2f1b82f7496c9a143a",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 50.205971998398674,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "`response_model` 参数",
+            "`response_model` 的优先级"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "chunk_016167f629c17468caa32f58",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 49.04427231322856,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "响应模型的编码参数",
+            "`response_model_include` 和 `response_model_exclude`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "chunk_980de7315aa467ba9f3c674c",
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "score": 49.035860000058925,
+          "title": "响应模型 - 返回类型",
+          "heading_path": [
+            "响应模型 - 返回类型",
+            "响应模型的编码参数",
+            "`response_model_include` 和 `response_model_exclude`",
+            "使用 `list` 而不是 `set`"
+          ],
+          "source_uri": "https://github.com/fastapi/fastapi/blob/afe41126f624af30038cc8e17b2aaf60ebd4b838/docs/zh/docs/tutorial/response-model.md"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "chunk_4c3d26160279a830638d3990",
+        "chunk_a364f0135665a5d48dfb9144"
+      ],
+      "first_relevant_rank": 1,
+      "hit_at_k": 1.0,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 38.669200002914295
+    }
+  ]
+}

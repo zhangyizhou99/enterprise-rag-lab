@@ -1,0 +1,510 @@
+{
+  "evaluation_set_id": "fastapi_retrieval_v1",
+  "schema_version": "1.0",
+  "corpus_snapshot": "vector_f8c4ccfbd78b2742ec7956a7",
+  "annotation_policy": "Each question has a current chunk-level relevance judgment and an exact evidence quote. These seed judgments were prepared from source text and must remain needs_human_review until the project author verifies question clarity, relevance grade, and missing alternative evidence.",
+  "questions": [
+    {
+      "query_id": "q001",
+      "query": "如何在 FastAPI 中配置允许跨域访问的源、方法和请求头？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "chunk_id": "chunk_47bac0dc3f2b85de07b15a84",
+          "relevance": 3,
+          "evidence_quote": "CORSMiddleware"
+        }
+      ]
+    },
+    {
+      "query_id": "q002",
+      "query": "添加多个 FastAPI 中间件时，请求和响应的执行顺序是什么？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_8bfb4c03599bfaa8043ca0cb",
+          "chunk_id": "chunk_14eea279a252f8231c9a0698",
+          "relevance": 3,
+          "evidence_quote": "最后添加的中间件是“最外层”的"
+        }
+      ]
+    },
+    {
+      "query_id": "q003",
+      "query": "如何用 Pydantic Settings 从环境变量读取并校验 FastAPI 配置？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_451f81e6883c75d70365418d",
+          "chunk_id": "chunk_85e625311f3f8a922a1ceaa5",
+          "relevance": 3,
+          "evidence_quote": "Pydantic 会以不区分大小写的方式读取环境变量"
+        }
+      ]
+    },
+    {
+      "query_id": "q004",
+      "query": "部署 FastAPI 时，通常由什么组件处理 HTTPS 证书并把请求转给应用？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_7516b7bd9c64f9831ad770d2",
+          "chunk_id": "chunk_76dac934743c34725fa73124",
+          "relevance": 3,
+          "evidence_quote": "TLS 终止代理"
+        }
+      ]
+    },
+    {
+      "query_id": "q005",
+      "query": "FastAPI 位于可信代理后面时，怎样让 HTTPS 重定向生成正确的公网 URL？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_4d66f266c40d8a3e7b03e4e6",
+          "chunk_id": "chunk_d64ee05fa282540853e319cb",
+          "relevance": 3,
+          "evidence_quote": "通过设置 `--proxy-headers`"
+        }
+      ]
+    },
+    {
+      "query_id": "q006",
+      "query": "如何在路径操作装饰器中声明返回的 HTTP 状态码？",
+      "category": "configuration",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_cde4d84de5157cd8b1f5609f",
+          "chunk_id": "chunk_b683294e6bf491129944b308",
+          "relevance": 3,
+          "evidence_quote": "`status_code` 参数接收表示 HTTP 状态码的数字"
+        }
+      ]
+    },
+    {
+      "query_id": "q007",
+      "query": "FastAPI 的依赖注入是什么，适合解决哪些问题？",
+      "category": "concept",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_f3f189f195aea2569f2fe4e7",
+          "chunk_id": "chunk_0da395023490c5f1d0c6f083",
+          "relevance": 3,
+          "evidence_quote": "共享数据库连接"
+        }
+      ]
+    },
+    {
+      "query_id": "q008",
+      "query": "路径参数声明为 int 后，FastAPI 会怎样处理 URL 中的字符串数值？",
+      "category": "concept",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_cabafbeaac6a31aa0ac05589",
+          "chunk_id": "chunk_bab86bd070b7883bfec02fa3",
+          "relevance": 3,
+          "evidence_quote": "不是 `\"3\"`（`str`）"
+        }
+      ]
+    },
+    {
+      "query_id": "q009",
+      "query": "为什么 FastAPI 使用 Pydantic 模型声明请求体？",
+      "category": "concept",
+      "review_status": "approved",
+      "notes": "人工复核认为原 Chunk 只笼统提到 Pydantic 的功能和优点，已保留为相关度 2，并补充具体列出校验、转换、错误定位、编辑器支持及 Schema 收益的候选证据。",
+      "judgments": [
+        {
+          "document_id": "doc_ca594b7acd14b3794f485148",
+          "chunk_id": "chunk_8214b7bd339b0fbb8983ace5",
+          "relevance": 2,
+          "evidence_quote": "模型来声明**请求体**"
+        },
+        {
+          "document_id": "doc_ca594b7acd14b3794f485148",
+          "chunk_id": "chunk_d46012002a235b5defc80c05",
+          "relevance": 3,
+          "evidence_quote": "数据无效时返回清晰的错误信息，并指出错误数据的确切位置和内容"
+        }
+      ]
+    },
+    {
+      "query_id": "q010",
+      "query": "异步编程中的并发和并行有什么区别？",
+      "category": "concept",
+      "review_status": "approved",
+      "notes": "人工复核确认两段证据共同提供重要辅助解释，但候选证据 2 侧重等待密集与 CPU 密集场景，并非并发和并行的最标准定义，因此两段均按相关度 2 计。",
+      "judgments": [
+        {
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "chunk_id": "chunk_aff912b2bc6ff8b32d82a071",
+          "relevance": 2,
+          "evidence_quote": "不同的事情或多或少同时发生"
+        },
+        {
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "chunk_id": "chunk_e00bc8b3034da3de0bd3660e",
+          "relevance": 2,
+          "evidence_quote": "并发不同于并行。而是在需要大量等待的特定场景下效果更好"
+        }
+      ]
+    },
+    {
+      "query_id": "q011",
+      "query": "OAuth2 作用域在 OpenAPI 中表示什么？",
+      "category": "concept",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_607d460b46995276b17d9ca8",
+          "chunk_id": "chunk_340b4566dead6f8cf54a0ff3",
+          "relevance": 3,
+          "evidence_quote": "OAuth2 作用域与 OpenAPI"
+        }
+      ]
+    },
+    {
+      "query_id": "q012",
+      "query": "FastAPI lifespan 中 yield 前后的代码分别在什么时候运行？",
+      "category": "concept",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_a89bf7973136039afbc4a93b",
+          "chunk_id": "chunk_b5b6c3d7b623bc3b8cf0f34e",
+          "relevance": 3,
+          "evidence_quote": "在 `yield` 之前"
+        }
+      ]
+    },
+    {
+      "query_id": "q013",
+      "query": "接收上传文件时，怎样避免把整个文件一次性放进内存？",
+      "category": "procedure",
+      "review_status": "approved",
+      "notes": "人工复核认为原 Chunk 只说明 bytes 的内存问题并提示 UploadFile，已降为相关度 2；补充 UploadFile 使用 spooled 文件、超过阈值写入磁盘的完整候选证据。",
+      "judgments": [
+        {
+          "document_id": "doc_dd056858ebb5465a1555d664",
+          "chunk_id": "chunk_4cead67dfb5d44051c0d9746",
+          "relevance": 2,
+          "evidence_quote": "整个内容会存储在内存中"
+        },
+        {
+          "document_id": "doc_dd056858ebb5465a1555d664",
+          "chunk_id": "chunk_1c100f3b23c678ee64563b5e",
+          "relevance": 3,
+          "evidence_quote": "超过该上限后会写入磁盘"
+        }
+      ]
+    },
+    {
+      "query_id": "q014",
+      "query": "如何在响应返回后执行发送邮件之类的小型后台任务？",
+      "category": "procedure",
+      "review_status": "approved",
+      "notes": "人工复核认为原 Chunk 只说明注入 BackgroundTasks。官方说明按标题分为互补 Chunk：响应后运行、注入对象和 add_task() 注册任务；没有单个 Chunk 独立完整回答，因此三段均按相关度 2 等待复核。",
+      "judgments": [
+        {
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "chunk_id": "chunk_2c6a42ec0026a2bacdf7a622",
+          "relevance": 2,
+          "evidence_quote": "BackgroundTasks"
+        },
+        {
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "chunk_id": "chunk_160bb5c1c23038cf07b2e47b",
+          "relevance": 2,
+          "evidence_quote": "在返回响应后运行的后台任务"
+        },
+        {
+          "document_id": "doc_f4160099413bd4b00b7caf17",
+          "chunk_id": "chunk_d8d8f82e6341c7eec8ab78b8",
+          "relevance": 2,
+          "evidence_quote": "用 `.add_task()` 方法将任务函数传到 *后台任务* 对象中"
+        }
+      ]
+    },
+    {
+      "query_id": "q015",
+      "query": "如何使用 pytest 和 TestClient 测试 FastAPI 接口？",
+      "category": "procedure",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_b83759371bdb806a5fd2c6e2",
+          "chunk_id": "chunk_c6750402a44b88084a812fc5",
+          "relevance": 3,
+          "evidence_quote": "通过传入你的**FastAPI**应用创建一个 `TestClient`"
+        }
+      ]
+    },
+    {
+      "query_id": "q016",
+      "query": "大型 FastAPI 项目怎样用 APIRouter 拆分多个模块？",
+      "category": "procedure",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_09637d55775414aab09ded16",
+          "chunk_id": "chunk_c82d08c40f1aa47db01b83b6",
+          "relevance": 3,
+          "evidence_quote": "使用 `APIRouter` 为该模块创建*路径操作*"
+        }
+      ]
+    },
+    {
+      "query_id": "q017",
+      "query": "如何为每个 FastAPI 请求提供独立的数据库 Session？",
+      "category": "procedure",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_58a5c14b4a0cbd9e9d544e9c",
+          "chunk_id": "chunk_f6fdff3344300520243d1ecf",
+          "relevance": 3,
+          "evidence_quote": "为每个请求提供一个新的 `Session`"
+        }
+      ]
+    },
+    {
+      "query_id": "q018",
+      "query": "怎样把一个静态文件目录挂载到 FastAPI 的指定路径？",
+      "category": "procedure",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_5f54f2bbd3bc7b99709fee26",
+          "chunk_id": "chunk_dae80be1ce920ce3943dcee0",
+          "relevance": 3,
+          "evidence_quote": "将一个 `StaticFiles()` 实例“挂载”（Mount）到指定路径"
+        }
+      ]
+    },
+    {
+      "query_id": "q019",
+      "query": "路径操作中找不到资源时，怎样返回带 detail 的 HTTP 错误？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "notes": "人工复核认为原 Chunk 只泛化说明 HTTPException，已降为相关度 2；补充明确展示不存在资源时返回 404、detail JSON 以及 detail 参数语义的候选证据。",
+      "judgments": [
+        {
+          "document_id": "doc_e0516fd9d9a66517a3c38999",
+          "chunk_id": "chunk_489426958bb381537a8138cf",
+          "relevance": 2,
+          "evidence_quote": "向客户端返回 HTTP 错误响应"
+        },
+        {
+          "document_id": "doc_e0516fd9d9a66517a3c38999",
+          "chunk_id": "chunk_2e8af3758cd345c49fcfe098",
+          "relevance": 3,
+          "evidence_quote": "\"detail\": \"Item not found\""
+        }
+      ]
+    },
+    {
+      "query_id": "q020",
+      "query": "为什么调试时要把 uvicorn.run 放在 __name__ == __main__ 判断里？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_d194837ee9ae1f212ebfbb36",
+          "chunk_id": "chunk_4169deb9ff7e33461f2bfc1d",
+          "relevance": 3,
+          "evidence_quote": "uvicorn.run(app, host=\"0.0.0.0\", port=8000)"
+        }
+      ]
+    },
+    {
+      "query_id": "q021",
+      "query": "JSON 请求缺少 Content-Type 时为什么不会按 JSON 解析？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_498de5ed55bac50d2f1dd82a",
+          "chunk_id": "chunk_72c5393a45809269ea513c53",
+          "relevance": 3,
+          "evidence_quote": "JSON 请求必须包含有效的 `Content-Type` 头"
+        }
+      ]
+    },
+    {
+      "query_id": "q022",
+      "query": "FastAPI 安全工具认证失败为什么现在返回 401 而不是旧版 403？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_937783b9078cbb64f23bbcfa",
+          "chunk_id": "chunk_3c779dd3f98e788dae94158c",
+          "relevance": 3,
+          "evidence_quote": "`401 Unauthorized`"
+        }
+      ]
+    },
+    {
+      "query_id": "q023",
+      "query": "测试时怎样临时替换 FastAPI 依赖并在结束后恢复？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_3b8b29f79e7494dff9b99a02",
+          "chunk_id": "chunk_847b57ff3dceeb1bc9654260",
+          "relevance": 3,
+          "evidence_quote": "app.dependency_overrides"
+        }
+      ]
+    },
+    {
+      "query_id": "q024",
+      "query": "CORS 开启凭证后为什么不能把 origins、methods 和 headers 都设为通配符？",
+      "category": "troubleshooting",
+      "review_status": "approved",
+      "notes": "原 Chunk 精确给出启用凭证时三项必须显式指定的规则；补充同文档中解释通配符不覆盖凭证通信的原因 Chunk。",
+      "judgments": [
+        {
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "chunk_id": "chunk_0291cf68753b757c380c1d39",
+          "relevance": 3,
+          "evidence_quote": "`allow_credentials` 设为 `True` 时"
+        },
+        {
+          "document_id": "doc_09318da6570045fe6fa6e5e0",
+          "chunk_id": "chunk_8d829c7320e1dc36e25a2625",
+          "relevance": 2,
+          "evidence_quote": "不包括所有涉及凭据的内容"
+        }
+      ]
+    },
+    {
+      "query_id": "q025",
+      "query": "返回字典或数据库对象时，response_model 与函数返回类型应该怎样选择？",
+      "category": "comparison",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_02f5b855e9a90b2aaf851f88",
+          "chunk_id": "chunk_6f448335e70200b32dd4a558",
+          "relevance": 3,
+          "evidence_quote": "参数 `response_model`，而不是返回类型"
+        }
+      ]
+    },
+    {
+      "query_id": "q026",
+      "query": "为什么同一个路径操作不能同时接收 Form 字段和 JSON Body 字段？",
+      "category": "comparison",
+      "review_status": "approved",
+      "notes": "原 Chunk 直接解释纯 Form 请求使用 application/x-www-form-urlencoded；补充 File 与 Form 并用时请求体改为 multipart/form-data 的同类限制。",
+      "judgments": [
+        {
+          "document_id": "doc_0e7fa92cd4cc5d1e1256d42d",
+          "chunk_id": "chunk_2f068becc3f463bd401382f5",
+          "relevance": 3,
+          "evidence_quote": "不能同时再声明要接收为 JSON 的 `Body` 字段"
+        },
+        {
+          "document_id": "doc_fd14dd0474d471ab9a82a331",
+          "chunk_id": "chunk_9beeec73001bd7c1b0d5a64f",
+          "relevance": 2,
+          "evidence_quote": "不能同时声明要接收 JSON 的 `Body` 字段"
+        }
+      ]
+    },
+    {
+      "query_id": "q027",
+      "query": "在 FastAPI 中兼容 Flask 或 Django 这类 WSGI 应用时需要什么包装层？",
+      "category": "comparison",
+      "review_status": "approved",
+      "notes": "补充当前推荐从 a2wsgi 导入 WSGIMiddleware、包装后挂载的直接操作证据。",
+      "judgments": [
+        {
+          "document_id": "doc_9ded5f89cfb34b9f01100adb",
+          "chunk_id": "chunk_702ee4fcb7f1d016a81152f6",
+          "relevance": 3,
+          "evidence_quote": "`WSGIMiddleware` 来包装你的 WSGI 应用"
+        },
+        {
+          "document_id": "doc_9ded5f89cfb34b9f01100adb",
+          "chunk_id": "chunk_c35facbf4c14d136891ea896",
+          "relevance": 3,
+          "evidence_quote": "从 `a2wsgi` 导入 `WSGIMiddleware`"
+        }
+      ]
+    },
+    {
+      "query_id": "q028",
+      "query": "调用需要 await 的第三方库时，路径操作应该使用 async def 还是普通 def？",
+      "category": "comparison",
+      "review_status": "approved",
+      "judgments": [
+        {
+          "document_id": "doc_dbeb44e6522020e50697ab64",
+          "chunk_id": "chunk_4faee3b8321d58672ad92cea",
+          "relevance": 3,
+          "evidence_quote": "通过 `async def` 声明你的 *路径操作函数*"
+        }
+      ]
+    },
+    {
+      "query_id": "q029",
+      "query": "使用 Pydantic Cookie 参数模型比逐个声明 Cookie 字段多做了什么？",
+      "category": "comparison",
+      "review_status": "approved",
+      "notes": "原 Chunk 只说明字段提取和模型实例化，降为相关度 2；补充模型复用、统一声明验证与元数据的直接收益，以及可禁止额外 Cookie 的辅助能力。",
+      "judgments": [
+        {
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "chunk_id": "chunk_3f6d3958d6bef86a07ff393f",
+          "relevance": 3,
+          "evidence_quote": "可以一次性声明所有参数的验证方式和元数据"
+        },
+        {
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "chunk_id": "chunk_9d5bb65c1f9457db83fd3527",
+          "relevance": 2,
+          "evidence_quote": "从请求中接收到的 **cookie** 中**提取**出**每个字段**的数据"
+        },
+        {
+          "document_id": "doc_1cb43b5e3ee1074618bb2c7b",
+          "chunk_id": "chunk_d8a9570984a010c66979a368",
+          "relevance": 2,
+          "evidence_quote": "禁止（ `forbid` ）任何额外（ `extra` ）字段"
+        }
+      ]
+    },
+    {
+      "query_id": "q030",
+      "query": "额外响应的 responses 参数与主响应的 response_model 有什么不同？",
+      "category": "comparison",
+      "review_status": "approved",
+      "notes": "原 Chunk 详细解释 responses 的状态码字典和模型 Schema，但主响应对比不够直接，降为相关度 2；补充明确区分主响应元数据与附加响应的 Chunk。",
+      "judgments": [
+        {
+          "document_id": "doc_e0ab7b2e23d96d3e541df665",
+          "chunk_id": "chunk_a364f0135665a5d48dfb9144",
+          "relevance": 3,
+          "evidence_quote": "这定义了该 *路径操作* 主响应的元数据"
+        },
+        {
+          "document_id": "doc_666e554d2bafa9d3befaf2c6",
+          "chunk_id": "chunk_4c3d26160279a830638d3990",
+          "relevance": 2,
+          "evidence_quote": "传入参数 `responses`"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "enterprise-rag-lab"
+version = "0.1.0"
+description = "An enterprise document RAG system built as an engineering lab."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+	"pdfplumber>=0.11,<1",
+	"python-docx>=1.1",
+	"pypdf>=5.0",
+]
+
+[project.optional-dependencies]
+embedding = [
+	"sentence-transformers>=5.1,<6",
+]
+vector = [
+	"qdrant-client>=1.12,<2",
+]
+dev = [
+	"pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/enterprise_rag_lab"]
