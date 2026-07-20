@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f2">
+  <title>Enterprise RAG Lab · Evidence Console</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="/assets/app.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">ER</div>
+        <div>
+          <strong>Enterprise RAG Lab</strong>
+          <span>Evidence Console</span>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <div class="live-state" id="live-state">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>正在连接</span>
+        </div>
+        <button class="icon-button" id="refresh-button" type="button" title="刷新运行状态" aria-label="刷新运行状态">
+          <i data-lucide="refresh-cw"></i>
+        </button>
+      </div>
+    </header>
+
+    <aside class="side-rail">
+      <nav class="primary-nav" aria-label="工作区">
+        <button class="nav-item is-active" type="button" data-view="retrieval">
+          <i data-lucide="search"></i><span>证据检索</span>
+        </button>
+        <button class="nav-item" type="button" data-view="corpus">
+          <i data-lucide="database"></i><span>语料与接入</span>
+        </button>
+        <button class="nav-item" type="button" data-view="evaluation">
+          <i data-lucide="chart-no-axes-column-increasing"></i><span>离线评测</span>
+        </button>
+      </nav>
+
+      <div class="rail-status">
+        <p class="eyebrow">Runtime</p>
+        <div class="capability-row">
+          <span>BM25 / FTS5</span><b id="keyword-state" class="state-tag">--</b>
+        </div>
+        <div class="capability-row">
+          <span>E5 / Qdrant</span><b id="hybrid-state" class="state-tag">--</b>
+        </div>
+      </div>
+
+      <div class="rail-footer">
+        <span>Local workspace</span>
+        <code>v0.1.0</code>
+      </div>
+    </aside>
+
+    <main class="main-stage">
+      <section class="view is-active" id="view-retrieval" data-view-panel="retrieval">
+        <div class="view-heading">
+          <div>
+            <p class="eyebrow">Retrieval / Top-K</p>
+            <h1>证据检索台</h1>
+          </div>
+          <div class="snapshot-label" id="snapshot-label">snapshot · --</div>
+        </div>
+
+        <div class="metrics-strip" aria-label="当前检索器离线指标">
+          <div class="metric-cell accent-blue">
+            <span>Recall@5</span><strong id="metric-recall">--</strong><small id="metric-scope">锚点检索</small>
+          </div>
+          <div class="metric-cell accent-acid">
+            <span>MRR@5</span><strong id="metric-mrr">--</strong><small>首个相关证据</small>
+          </div>
+          <div class="metric-cell accent-coral">
+            <span>P95 latency</span><strong id="metric-p95">--</strong><small>本地离线 / 30 queries</small>
+          </div>
+          <div class="metric-cell">
+            <span>Live latency</span><strong id="metric-live">--</strong><small id="result-count">等待查询</small>
+          </div>
+        </div>
+
+        <form class="search-workbench" id="search-form">
+          <label class="search-field" for="query-input">
+            <i data-lucide="search"></i>
+            <input id="query-input" name="query" type="search" minlength="3" maxlength="500" autocomplete="off" value="如何在 FastAPI 中配置允许跨域访问的源、方法和请求头？" required>
+            <button class="primary-command" id="search-button" type="submit">
+              <span>检索</span><i data-lucide="arrow-right"></i>
+            </button>
+          </label>
+          <div class="search-controls">
+            <div class="segmented-control" role="group" aria-label="检索模式">
+              <button class="segment is-selected" type="button" data-mode="keyword">BM25</button>
+              <button class="segment" type="button" data-mode="hybrid">RRF Hybrid</button>
+            </div>
+            <label class="toggle-control" title="为 RRF 锚点拼接同章节相邻 Chunk">
+              <input id="context-toggle" type="checkbox" disabled>
+              <span class="toggle-track" aria-hidden="true"></span>
+              <span>章节上下文</span>
+            </label>
+            <label class="select-control">
+              <span>Top</span>
+              <select id="limit-select" aria-label="返回结果数量">
+                <option value="3">3</option>
+                <option value="5" selected>5</option>
+                <option value="8">8</option>
+              </select>
+            </label>
+          </div>
+        </form>
+
+        <div class="query-presets" aria-label="示例查询">
+          <button type="button" data-query="UploadFile 为什么适合接收大文件？">UploadFile 大文件</button>
+          <button type="button" data-query="BackgroundTasks 在什么时候执行？">后台任务时机</button>
+          <button type="button" data-query="CORS 携带凭证时为什么不能使用通配符？">CORS 凭证约束</button>
+        </div>
+
+        <div class="result-toolbar">
+          <span id="result-status">输入问题后执行检索</span>
+          <span id="retriever-label">BM25 / FTS5 trigram</span>
+        </div>
+        <div class="results-list" id="results-list" aria-live="polite">
+          <div class="empty-state">
+            <i data-lucide="scan-search"></i>
+            <strong>等待第一条查询</strong>
+            <span>候选 Chunk、来源定位和排序分数会出现在这里。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-corpus" data-view-panel="corpus" hidden>
+        <div class="view-heading">
+          <div><p class="eyebrow">Corpus / Pipeline</p><h1>语料与接入</h1></div>
+          <div class="corpus-totals">
+            <span><b id="document-total">--</b> documents</span>
+            <span><b id="chunk-total">--</b> chunks</span>
+          </div>
+        </div>
+
+        <div class="ingestion-layout">
+          <form class="upload-tool" id="upload-form">
+            <div class="upload-dropzone" id="upload-dropzone">
+              <i data-lucide="file-up"></i>
+              <strong id="upload-label">选择或拖入文档</strong>
+              <span>Markdown · DOCX · 原生 PDF · 最大 25 MB</span>
+              <input id="file-input" name="file" type="file" accept=".md,.markdown,.docx,.pdf" required>
+            </div>
+            <label class="source-field">
+              <span>Source URI</span>
+              <input id="source-uri-input" name="source_uri" type="url" placeholder="https://github.com/org/repo/blob/...">
+            </label>
+            <button class="primary-command wide" id="upload-button" type="submit">
+              <i data-lucide="play"></i><span>执行接入流水线</span>
+            </button>
+          </form>
+
+          <div class="pipeline-receipt" id="pipeline-receipt">
+            <div class="receipt-empty">
+              <span>INGEST</span><i data-lucide="arrow-right"></i><span>CLEAN</span><i data-lucide="arrow-right"></i><span>CHUNK</span><i data-lucide="arrow-right"></i><span>INDEX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><p class="eyebrow">Registry</p><h2>最近更新</h2></div>
+          <span id="indexed-total">-- indexed</span>
+        </div>
+        <div class="document-table-wrap">
+          <table class="document-table">
+            <thead><tr><th>文档</th><th>格式</th><th>状态</th><th>更新时间</th><th>来源</th></tr></thead>
+            <tbody id="document-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="view" id="view-evaluation" data-view-panel="evaluation" hidden>
+        <div class="view-heading">
+          <div><p class="eyebrow">Evaluation / Approved set</p><h1>离线评测矩阵</h1></div>
+          <div class="approved-mark"><i data-lucide="badge-check"></i><span>30 / 30 approved</span></div>
+        </div>
+
+        <div class="evaluation-ledger">
+          <table class="evaluation-table">
+            <thead>
+              <tr><th>Retriever</th><th>Hit@5</th><th>Recall@5</th><th>MRR@5</th><th>Evidence Recall</th><th>Evidence MRR</th><th>P95</th></tr>
+            </thead>
+            <tbody id="evaluation-table-body"></tbody>
+          </table>
+        </div>
+
+        <div class="evaluation-notes">
+          <div><span class="note-index">01</span><strong>30 questions</strong><p>配置、概念、流程、排障、比较各 6 条</p></div>
+          <div><span class="note-index">02</span><strong>42 judgments</strong><p>绑定 document、Chunk 与原文摘录</p></div>
+          <div><span class="note-index">03</span><strong>Retrieval only</strong><p>当前指标不包含生成答案与引用正确率</p></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
